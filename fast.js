@@ -1,4 +1,4 @@
-/*! without-auth_e-book_tutorial_免登入電子書教學 v86 https://gist.github.com/notlin4/a05d7db77cd5606a812f4b9900fef3ee */
+/*! without-auth_e-book_tutorial_免登入電子書教學 v89 https://gist.github.com/notlin4/a05d7db77cd5606a812f4b9900fef3ee */
 if (window.location.href.startsWith("https://webetextbook.knsh.com.tw/")) {
   var executed = false;
   document.querySelectorAll('.downAssetBtn').forEach(function(button) {
@@ -56,17 +56,17 @@ if (!localStorage.getItem("isLogin")) {
   var choice = parseInt(prompt('請輸入您的選擇（輸入數字 1、2、3 或 4）：'));
   
   if (choice === 1) {
-    if (confirm('網址錯誤，請選擇要開啟的項目：\n\n1. 國小領域\n2. 國小英語\n3. 國中領域\n4. 國中輔材\n5. 網頁媒體盒')) {
+    if (confirm('請選擇要開啟的項目：\n\n1. 國小領域\n2. 國小英語\n3. 國中領域\n4. 國中輔材\n5. 網頁媒體盒')) {
       var selectedURL = ['https://webetextbook.knsh.com.tw/2/index.html?code_degree=1', 'https://webetextbook.knsh.com.tw/2/index.html?code_degree=3', 'https://webetextbook.knsh.com.tw/2/index.html?code_degree=2', 'https://digitalmaster.knsh.com.tw/ebook/review/', 'https://digitalmaster.knsh.com.tw/downloader/box-web/index.html'][parseInt(prompt('請輸入您的選擇（輸入數字 1、2、3、4 或 5）：')) - 1];
       selectedURL && window.open(selectedURL, '_blank');
     }
   } else if (choice === 2) {
-    if (confirm('網址錯誤，請選擇要開啟的項目：\n\n1. 翰林行動大師\n2. 翰林輔材網')) {
+    if (confirm('請選擇要開啟的項目：\n\n1. 翰林行動大師\n2. 翰林輔材網')) {
       var selectedURL = ['https://edisc3.hle.com.tw/edisc_v3/ebook_v2023.html', 'https://reference.hle.com.tw'][parseInt(prompt('請輸入您的選擇（輸入數字 1 或 2）：')) - 1];
       selectedURL && window.open(selectedURL, '_blank');
     }
   } else if (choice === 3) {
-    if (confirm('網址錯誤，請選擇要開啟的項目：\n\n1. OneBook 電子書\n2. OneBox 網頁版\n3. OnePaper 線上雲端出題')) {
+    if (confirm('請選擇要開啟的項目：\n\n1. OneBook 電子書\n2. OneBox 網頁版\n3. OnePaper 線上雲端出題')) {
       var selectedURL = ['https://reader.oneclass.com.tw/bookshelf', 'https://onebox2.oneclass.com.tw/', 'https://onepaper.oneclass.com.tw/'][parseInt(prompt('請輸入您的選擇（輸入數字 1、2 或 3）：')) - 1];
       selectedURL && window.open(selectedURL, '_blank');
     }
