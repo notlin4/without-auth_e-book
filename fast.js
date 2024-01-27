@@ -1,4 +1,4 @@
-/*! without-auth_e-book_tutorial_免登入電子書教學 v103 https://gist.github.com/notlin4/a05d7db77cd5606a812f4b9900fef3ee */
+/*! without-auth_e-book_tutorial_免登入電子書教學 v105 https://gist.github.com/notlin4/a05d7db77cd5606a812f4b9900fef3ee */
 if (window.location.href.startsWith("https://webetextbook.knsh.com.tw/")) {
   var executed = false;
   document.querySelectorAll('.downAssetBtn').forEach(function(button) {
@@ -49,9 +49,9 @@ if (window.location.href.startsWith("https://webetextbook.knsh.com.tw/")) {
   localStorage.setItem("nani_tokenInfo", mockToken);
   location.reload();
 } else if (window.location.href.startsWith("https://reference.hle.com.tw")) {
-  sessionStorage.setItem("userToken", "mockToken");
-  sessionStorage.setItem("userRole", "老師");
-  location.reload();
+  sessionStorage.setItem("accessToken", "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1NzgwNWYxZGQ3ZmE5YTZiNTI3ZjQ0ZWNmZmJkNDhjIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE3MDQyODQ3MTcsImV4cCI6MTczNjQyNTUxNywiaXNzIjoiaHR0cHM6Ly9pZC5obGUuY29tLnR3IiwiY2xpZW50X2lkIjoianMiLCJzdWIiOiJlNzQ3MjMwNS0xYWQyLTRjMDYtYjExOC1mZTdkODk3MzNmYjAiLCJhdXRoX3RpbWUiOjE3MDQyODQ3MTYsImlkcCI6ImxvY2FsIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoicmFtYXcxOTM0MEB3aWtmZWUuY29tIiwiQXNwTmV0LklkZW50aXR5LlNlY3VyaXR5U3RhbXAiOiJTT0NXSjZZRjRDWEJZSFZYSllZWlRXWlJKQU9KV1pNSSIsInJvbGUiOiLogIHluKsiLCJlbWFpbCI6InJhbWF3MTkzNDBAd2lrZmVlLmNvbSIsImZhbWlseV9uYW1lIjoicmFtYXciLCJnaXZlbl9uYW1lIjoiMTkzNDAiLCJuYW1lIjoicmFtYXcxOTM0MCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJyYW1hdzE5MzQwIiwidXNlcl9kb21haW4iOiJlZHUiLCJzY2hvb2xTeXN0ZW0iOiLlnIvkuK0iLCJpc2lkZW50aWZpZWQiOnRydWUsImxvY2siOnRydWUsInZlciI6MSwic2NvcGUiOlsib3BlbmlkIl0sImFtciI6WyJwd2QiXX0.wOHPf0_RNIAyPPq5wOhITi3TRddTqfWq-_yHWAPf0jw9EYNWE2LTT7lkTBET-RO6dXSOOR9E7eHeXlaxwPCGKErK0JJYY_WxvgxmuARub2YiAmS2zYsHoIpBcE5yMFkjw2HKKFQ4nMf_pQj8bazx6aYEFGRYL8K1vC8Y2omugd3igVbqF6IE7wjBg35CLiLt20aYpVYaNE8mikoCQjQ3BMIuapuf_h0e61N5ZqdRUNlbJj-kjILJ2UjQ8x_5woE5ZB0kh6CJO-34ygGHcd7G17XUbuJY_Y-vuldpqexlo43SUDVmgkDiF1HkJuoEGQtzbV6auhqSHpRapN6ktJw7kw"); // 設定權杖
+  sessionStorage.setItem("userRole", "老師"); // 將身分設定為老師
+  location.reload(); // 重新載入網頁
 } else if (window.location.href.startsWith("https://bookonline.hess.com.tw/bookcase/#/")) {
 if (!localStorage.getItem("isLogin")) {
   localStorage.setItem("isLogin", "true");
