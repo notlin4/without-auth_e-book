@@ -1,4 +1,4 @@
-/*! without-auth_e-book_tutorial_免登入電子書教學 v105 https://gist.github.com/notlin4/a05d7db77cd5606a812f4b9900fef3ee */
+/*! without-auth_e-book_tutorial_免登入電子書教學 v108 https://gist.github.com/notlin4/a05d7db77cd5606a812f4b9900fef3ee */
 if (window.location.href.startsWith("https://webetextbook.knsh.com.tw/")) {
   var executed = false;
   document.querySelectorAll('.downAssetBtn').forEach(function(button) {
@@ -35,7 +35,7 @@ if (window.location.href.startsWith("https://webetextbook.knsh.com.tw/")) {
 } else if (window.location.href.includes("oneclass.com.tw")) {
   let mockToken = JSON.stringify({
   "code": "SUCCESS",
-  "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbXlhY2NvdW50Lm5hbmkuY29vbC8iLCJzdWIiOiJ1c2Vycy9MZW5zODM4MCIsImZyb20iOiJOYW5pIiwidXNlcm5hbWUiOiJMZW5zODM4MCIsImVtYWlsdmFsaWQiOnRydWUsIm1vYmlsZXZhbGlkIjpmYWxzZSwiZW1haWwiOiI1bTF0Z3J4ZkBkdWNrLmNvbSIsInVpZCI6ImNhZWEzY2EwLTZlN2QtMTFlZS05NTlhLTJmNDEzZWZhMjIxZiIsImp0aSI6Ijc0NTRhYmJiLTZiYWUtNGRkOS1iZmJiLWIxZjEyNzE3MjFlYSIsImlhdCI6MTcwMjk4MzkzNywiZXhwIjoxNzA4MTY3OTM3fQ.HvQkN-h8Y0n5yFgQQ3ckuM8X7-rIo5GRMpEn1ElRHU0"});
+  "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbXlhY2NvdW50Lm5hbmkuY29vbC8iLCJzdWIiOiJ1c2Vycy9yYW1hdzE5MzQwIiwiZnJvbSI6Ik5hbmkiLCJ1c2VybmFtZSI6InJhbWF3MTkzNDAiLCJlbWFpbHZhbGlkIjp0cnVlLCJtb2JpbGV2YWxpZCI6ZmFsc2UsImVtYWlsIjoicmFtYXcxOTM0MEB3aWtmZWUuY29tIiwidWlkIjoiMGYxZDQ3ODAtYTk3Yy0xMWVlLWE5M2MtMjVlYjM1MGQ3YWNmIiwianRpIjoiOTBlMDhhYjItNDFlNS00ZGUyLWFkM2UtZjA0ZDg2YjQwOGIxIiwiaWF0IjoxNzA0MjA2MTA4LCJleHAiOjE3MDkzOTAxMDh9.wHRXGTai3_3B9N2SlnQpSmDy_MW5p23CVGWSNrVhYLE"});
   let fieldName = "nani_oneclass_login_token";
   var d = new Date();
   d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));
