@@ -1,12 +1,12 @@
-/*! without-auth_e-book_tutorial_免登入電子書教學 v110 https://gist.github.com/notlin4/a05d7db77cd5606a812f4b9900fef3ee */
+/*! without-auth_e-book_tutorial_免登入電子書教學 v119 https://gist.github.com/notlin4/a05d7db77cd5606a812f4b9900fef3ee */
 if (window.location.href.startsWith("https://webetextbook.knsh.com.tw/")) {
   var executed = false;
   document.querySelectorAll('.downAssetBtn').forEach(function(button) {
     if (!executed && (!document.getElementById('assetsPage') || document.getElementById('assetsPage').style.display === 'none')) {
-      alert('請先點選你要使用的電子書再執行指令碼。');
+      alert('請先點選你要使用的電子書，再執行指令碼。');
       executed = true;
     } else if (!executed && button.getAttribute('d-title').includes("(網頁版)")) {
-      alert('偵測到網頁版內容，目前尚未支援此功能，造成不便之處，敬請見諒。');
+      alert('偵測到一到五年級內容，目前不支援繞過一到五年級的電子書，請改用網頁媒體盒進行下載。造成不便之處，敬請見諒。');
       executed = true;
     } else if (!executed) {
       var link = document.createElement('a');
@@ -35,7 +35,7 @@ if (window.location.href.startsWith("https://webetextbook.knsh.com.tw/")) {
 } else if (window.location.href.includes("oneclass.com.tw")) {
   let mockToken = JSON.stringify({
   "code": "SUCCESS",
-  "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbXlhY2NvdW50Lm5hbmkuY29vbC8iLCJzdWIiOiJ1c2Vycy9yYW1hdzE5MzQwIiwiZnJvbSI6Ik5hbmkiLCJ1c2VybmFtZSI6InJhbWF3MTkzNDAiLCJlbWFpbHZhbGlkIjp0cnVlLCJtb2JpbGV2YWxpZCI6ZmFsc2UsImVtYWlsIjoicmFtYXcxOTM0MEB3aWtmZWUuY29tIiwidWlkIjoiMGYxZDQ3ODAtYTk3Yy0xMWVlLWE5M2MtMjVlYjM1MGQ3YWNmIiwianRpIjoiNmJjZWNhNzYtY2IzZS00ZjUyLTk0M2QtMzJmNDJkNmVjOTgyIiwiaWF0IjoxNzA5MzkwMzU1LCJleHAiOjE3MTQ1NzQzNTV9.JLmzjfEhH4ddpvnZESO6FSULoTbquCEM2AWthF0HKkE"});
+  "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbXlhY2NvdW50Lm5hbmkuY29vbC8iLCJzdWIiOiJ1c2Vycy91bmljeWNsZTQiLCJmcm9tIjoiTmFuaSIsInVzZXJuYW1lIjoidW5pY3ljbGU0IiwiZW1haWx2YWxpZCI6dHJ1ZSwibW9iaWxldmFsaWQiOmZhbHNlLCJlbWFpbCI6ImtyNTJ5NTRtQGR1Y2suY29tIiwidWlkIjoiNDA3YzBhNjAtMzgxZS0xMWVmLWEyZjMtMGYxNmE0Y2MyYjA4IiwianRpIjoiY2FjNDAzYjAtZjkyYS00YmY1LTg0MDktNWM1OTk1OGEwMTIxIiwiaWF0IjoxNzE5ODg4ODQzLCJleHAiOjE3MjUwNzI4NDN9.-usPxm8q72YvcAkqqdRSYoxVC-h2K862EV8DCtMZQCI"});
   let fieldName = "nani_oneclass_login_token";
   var d = new Date();
   d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));
